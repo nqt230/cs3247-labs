@@ -8,9 +8,6 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnUpdateScore, int32, NewScore);
 
-/**
- * 
- */
 UCLASS()
 class VARLABS_STARTER_API UMyGameInstanceSubsystem : public UGameInstanceSubsystem
 {
@@ -21,11 +18,14 @@ public:
 	FOnUpdateScore OnUpdateScore;
 
 public:
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (DisplayName = "Score"))
+	UPROPERTY(BlueprintReadOnly, meta = (DisplayName = "Score"))
 	int32 iScore;
 
 public:
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 
 	virtual void Deinitialize() override;
+
+	UFUNCTION(BlueprintCallable)
+	void SetScore(int32 Score) { iScore = Score; OnUpdateScore.Broadcast(Score); }
 };
