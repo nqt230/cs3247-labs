@@ -18,6 +18,13 @@ void AMyActorA::BeginPlay()
 	
 }
 
+void AMyActorA::MyMethod_Implementation(FMyStruct MyStruct)
+{
+	FString msg = TEXT("BlueprintNativeEvent Default Implementation");
+	UE_LOG(LogTemp, Display, TEXT("%s"), *msg);
+	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, msg);
+}
+
 // Called every frame
 void AMyActorA::Tick(float DeltaTime)
 {

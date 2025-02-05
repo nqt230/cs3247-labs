@@ -26,10 +26,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION(BlueprintNativeEvent)
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	void MyMethod(FMyStruct MyStruct);
 
-	virtual void MyMethod_Implementation(FMyStruct MyStruct) { };
+	void MyMethod_Implementation(FMyStruct MyStruct);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void MyMethod2();
 
 	virtual int32 InterfaceMethod1() override { return 99; }
 
