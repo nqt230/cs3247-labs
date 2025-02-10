@@ -1,0 +1,5 @@
+Name,ItemName,ItemDesc,ItemIcon,ItemModel
+1,"Axe","An axe.","Texture2D'/Game/Textures/UI/T_Circle.T_Circle'","StaticMesh'/Game/Meshes/Props/Combat/Handheld/SM_Axe_A.SM_Axe_A'"
+2,"Barrel","A barrel.","Texture2D'/Game/Textures/UI/T_Circle.T_Circle'","StaticMesh'/Game/Meshes/Props/Barrels/SM_Barrel_A.SM_Barrel_A'"
+3,"Explosive Barrel","An explosive barrel.","Texture2D'/Game/Textures/UI/T_Circle.T_Circle'","StaticMesh'/Game/Meshes/Props/Barrels/SM_Barrel_B.SM_Barrel_B'"
+4,"Wooden Barrel","A wooden barrel.","Texture2D'/Game/Textures/UI/T_Circle.T_Circle'","StaticMesh'/Game/Meshes/Props/Barrels/SM_Barrel_C.SM_Barrel_C'"

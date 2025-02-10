@@ -1,0 +1,9 @@
+Namespace,Key,SourceString
+Item,Item1Name,"Axe"
+Item,Item1Desc,"An Axe"
+Item,Item2Name,"Barrel"
+Item,Item2Desc,"A Barrel"
+Item,Item3Name,"Explosive Barrel"
+Item,Item3Desc,"An Explosive Barrel"
+Item,Item4Name,"Wooden Barrel"
+Item,Item4Desc,"A Wooden Barrel"
